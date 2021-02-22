@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+}
+
+.header,.visual,.main,.slogan,.footer-content{
+    width: 940px;
+    margin: 0 auto;
+}
+.header{
+    background-color: yellow;
+    height: 10vh;
+}
+.visual{
+    background-color: salmon;
+    height: 10vh;
+}
+.main{
+    background-color: blue;
+    border: 10px solid green;
+    /* height: 60vh; */
+    overflow: hidden;
+}
+.group{
+    height: 60vh;
+}
+.group1{
+    background-color: violet;
+    float:left;
+    width: 250px;
+}
+.group2{
+    background-color: aqua;
+    width: 380px;
+    float: left;
+}
+.group3{
+    background-color: sandybrown;
+    float: left;
+    width: 190px;
+}
+.slogan{
+    background-color: lightgreen;
+    height: 10vh;
+
+    /* clear는 left right를 해제해라, float와 겹치지 않게 하기 위해서 사용한다 */
+}
+.footer{
+    background-color: silver;
+}
+.footer-content{
+    background-color: pink;
+    height: 10vh;
+}
