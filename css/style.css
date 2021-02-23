@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    background-color: #ccc;
 }
 /* body 명화하게 나타내기 위해서 before t설정 */
 body *, body *::before, body *::after{
@@ -10,10 +11,30 @@ body *, body *::before, body *::after{
     width: 940px;
     margin: 0 auto;
 }
+/* header영역 logo를 이용해서 position을 이용해 바꾼다 */
 .header{
-    background-color: yellow;
-    height: 10vh;
+    background-color: #fff;
+    position: relative;
+
 }
+/* logo */
+.logo{
+    margin: 0;
+    position: absolute;
+    top: 45px;
+    left: 65px;
+    font-size : 100%;
+    line-height: 1;
+}
+/* wev cafe 글씨에 생긱는 로고 갭 사라짐?? */
+/* .logo a, .logo img{
+    display: block;
+} */
+/* 안내링크 */
+.member{
+    margin: 0;
+}
+
 .visual{
     background-color: salmon;
     height: 10vh;
