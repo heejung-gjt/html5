@@ -1,10 +1,19 @@
+html{
+    font-size: 10px;
+}
 body{
     margin: 0;
     background-color: #ccc;
+    font-size: 1.2rem;
 }
 /* body 명화하게 나타내기 위해서 before t설정 */
 body *, body *::before, body *::after{
     box-sizing: border-box;
+}
+/* 링크스타일 */
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
 .header,.visual,.main,.slogan,.footer-content{
@@ -15,6 +24,7 @@ body *, body *::before, body *::after{
 .header{
     background-color: #fff;
     position: relative;
+    padding: 0 30px;
 
 }
 /* logo */
@@ -30,9 +40,34 @@ body *, body *::before, body *::after{
 /* .logo a, .logo img{
     display: block;
 } */
+
 /* 안내링크 */
 .member{
     margin: 0;
+    list-style: none;
+    padding-left: 0;
+    text-align: right;
+    /* display:inline-block의 위치는 부모요소에서  align 지정 */
+    font-size: 0;
+    padding: 5px 0;
+    position: relative;
+    right: -10px;
+}
+.member li{
+    display: inline-block;
+    font-size: 1.2rem;
+    position: relative;
+    text-transform: uppercase;
+    /* 루트를 변경하면 Rem으로 설정된것들 바뀌는 것을 볼 수 있다 */
+}
+
+.member a{
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.divider{
+    margin: 0 3px;
 }
 
 .visual{
