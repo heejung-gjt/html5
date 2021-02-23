@@ -20,36 +20,26 @@ body *, body *::before, body *::after{
 }
 .main{
     background-color: blue;
-    padding:30px 15px;
-    /* box-sizing: border-box; */
-    /* width: 910px; */
-    /* width재정의를 해준다 */
-    /* height: 60vh; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+}
 
-}
-.main::after{
-    content: '';
-    display: block;
-    clear:both;
-}
 .group{
     height: 60vh;
-    /* margin: 30px 0; */
-    margin: 0 15px;
 }
 .group1{
     background-color: violet;
-    float:left;
     width: 250px;
 }
 .group2{
     background-color: aqua;
     width: 380px;
-    float: left;
+    order: -1;
 }
 .group3{
     background-color: sandybrown;
-    float: left;
     width: 190px;
 }
 /* float의 영향을 벗어날거야  margin을 강제로 주면서 */
