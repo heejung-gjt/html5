@@ -1,10 +1,29 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url(./normalize.css);
+
+/* 숨김 콘텐츠 */
+.a11y-hidden{
+    background-color: yellow;
+    /* display: none; */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin:-1px;
+    overflow:hidden;
+    clip:rect(0 0 0 0);
+    clip-path:polygon(0 0, 0 0, 0 0)==
+    /* polygon함수를 따라서 화면에 보였던 빨간색 점 사라짐 */
+}
+
 html{
     font-size: 10px;
 }
 body{
-    margin: 0;
     background-color: #ccc;
     font-size: 1.2rem;
+    font-weight: 300;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+
 }
 /* body 명화하게 나타내기 위해서 before t설정 */
 body *, body *::before, body *::after{
