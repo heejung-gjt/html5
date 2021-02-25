@@ -3,7 +3,7 @@
 @import url(./normalize.css);
 
 /* 숨김 콘텐츠 */
-.a11y-hidden{
+.a11y-hidden,legend{
   background-color: red;
   position: absolute;
   width: 1px;
@@ -238,6 +238,84 @@ a{
 .group3{
   width: 190px;
 }
+
+/* 로그인 */
+
+.login{
+    background: radial-gradient(circle at right top,#eaac2e,#ce4827);
+    border-radius: 5px;
+    box-shadow: 5px 5px 0 0 #aaa;
+    padding: 10px;
+}
+
+.login-heading{
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ff0;
+    /* margin-left: 10px; */
+    text-indent:10px
+}
+.login-form{
+    background-color: #fff;
+    border-radius: 5px 5px 0 0;
+    padding: 10px 10px 0 10px;
+    margin: 10px 0 0 0;
+}
+.login-form fieldset{
+    margin: 0;
+    padding: 0 0 10px 0;
+    border: 0;
+    border-bottom: 1px solid #aaa;
+    position: relative;
+}
+.btn-login{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ce4827;
+    color: #fff;
+    border:0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+}
+
+.member-service{
+    background-color: #fff;
+    padding: 5px 10px 10px 10px;
+    margin: 0;
+    list-style-type: none;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-pw{
+    margin-top: 6px;
+}
+
+.login-form label{
+    display: inline-block;
+    width: 55px;
+}
+
+.login-form input{
+    width: 90px;
+    height: 22px;
+    padding: 1px 1px 1px 5px;
+    border: 1px solid #aaa;
+}
+.member-service a{
+    /* span과 나란히 나열되면서 패딩 줄려면 display inlin-block으로 설정해준다 */
+    display: inline-block;
+    padding: 5px 0;
+}
+.member-service .icon-right-open{
+    color: #ce4827;
+}
+
 .slogan{
   background-color: lightgreen;
   height: 10vh;
