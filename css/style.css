@@ -316,6 +316,33 @@ a{
     color: #ce4827;
 }
 
+/* 유효성 검사 배너 */
+.validation-list{
+    /* background-color: yellow; */
+    margin: 25px 0 0 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.validation-list a{
+    display: block;
+    font-size: 1.2em;
+    position: relative;
+    border: 1px solid red;
+    margin: 10px 0;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: 2px solid rgb(180, 177, 177);
+    padding: 7px 5px 5px 40px;
+    background:url(./images/validation_icon.png) no-repeat 20px 50%,
+    linear-gradient(180deg,#ccc,#eee);
+}
+.validation-list a:hover{
+    color: orangered;
+}
+
+
+
 .slogan{
   background-color: lightgreen;
   height: 10vh;
