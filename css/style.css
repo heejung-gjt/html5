@@ -341,6 +341,71 @@ a{
     color: orangered;
 }
 
+/* 웹 관련 용어 */
+.term{
+    background:#ccc linear-gradient(180deg,#ccc,#eee);
+    border:1px solid #aaa;
+    border-radius: 5px;
+    padding:15px;
+}
+.term-heading{
+  margin: 0;
+  font-size: 1.5rem;  
+  /* em단위는 상속받는다, rem은 15px로 줄어든다 */
+  font-weight: 500;
+}
+.term-list{
+  margin: 10px 0 0 0;
+}
+
+.term-list-thumbnail, .term-list-brief{
+  margin-left: 0;
+  /* 에이전트 스타일 지워주기 */
+}
+.term-list-subject,.term-list-brief{
+  width: 145px;
+}
+.term-list-subject{
+  color: #296897;
+  margin-top: -1px;
+}
+.term-list-brief{
+  margin-top: 5px;
+  /* text-align: justify; */
+  /* 줄과 줄 사이 넓혀 주자 1.6배 */
+  line-height: 1.5;
+}
+.term-list > div::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.term-list > div{
+  /* overflow: hidden; */
+  margin-top: 10px;
+}
+.term-list img{
+  vertical-align: top;
+  /* display: block; */
+}
+
+.term-list div:nth-child(odd) .term-list-subject,
+.term-list div:nth-child(odd) .term-list-brief{
+  float:right;
+}
+.term-list div:nth-child(odd) .term-list-thumbnail{
+  float:left
+}
+
+.term-list div:nth-child(even) .term-list-subject,
+.term-list div:nth-child(even) .term-list-brief{
+  float:left;
+}
+.term-list div:nth-child(even) .term-list-thumbnail{
+  float:right
+}
+
 
 
 .slogan{
