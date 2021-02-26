@@ -343,6 +343,7 @@ a{
 
 /* 웹 관련 용어 */
 .term{
+  
     background:#ccc linear-gradient(180deg,#ccc,#eee);
     border:1px solid #aaa;
     border-radius: 5px;
@@ -406,6 +407,54 @@ a{
   float:right
 }
 
+/* 검색 폼 - (자료검색) */
+
+.search-form{
+  background:#ccc linear-gradient(180deg,#ccc,#fff);
+  border-radius: 20px 20px 0 0;
+  border: 1px solid #ccc;
+  /* border-bottom: 0; */
+  border-bottom-color: #fff;
+  padding: 15px 15px 10px;
+
+}
+.search-form fieldset{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.search-form .flexbox{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-form input{
+  /* width: 200px; */
+  border: 1px solid #aaa;
+  padding: 1px 1px 1px 5px;
+  height: 22px;
+  border-radius: 3px;
+}
+/* .search-form label{
+  line-height: 0;
+  vertical-align: center;
+  display: inline-block;
+  font-weight: 500;
+
+} */
+.btn-search{
+  background-color: rgb(60, 58, 58);
+  color: white;
+  border-radius: 3px solid #eee;
+  border: 1px solid ;
+  padding: 3 10px;
+  height: 22px;
+  font-size: 1.1rem;
+
+}
+
+/* 슬로건 */x
 
 
 .slogan{
@@ -419,4 +468,4 @@ a{
 .footer-content{
   background-color: pink;
   height: 10vh;
-}
+} 
