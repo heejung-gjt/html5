@@ -170,17 +170,8 @@
         </section>
         <section class="term">
           <h2 class="term-heading">웹 관련 용어</h2>
-          <dl class="term-list"> 
-            <div >
-              <dt class="term-list-subject">웹 표준 이란?</dt>
-              <dd class="term-list-thumbnail">
-                <img src="images/web_standards.gif" alt="W3C 로고">
-              </dd>
-              <dd class="term-list-brief">
-                W3C 단체에서 규정한 웹 기술 사양에 대한 규칙을 말하며 표준 규격은...
-              </dd>
-            </div>            
-            <div >
+          <dl class="term-list">             
+            <div>
               <dt class="term-list-subject">웹 표준 이란?</dt>
               <dd class="term-list-thumbnail">
                 <img src="images/web_standards.gif" alt="W3C 로고">
@@ -194,21 +185,21 @@
       </div>
       <div class="group group2">
         <section class="search">
-          <h2 class="a11y-hidden">자료검색</h2>
-            <form method="POST" action="https://formspree.io/seulbinim@gmail.com" class="search-form">
-              <fieldset>
-                <legend>검색 폼</legend>
-                <div class="flexbox">
+          <h2 class="a11y-hidden">검색</h2>
+          <form method="POST" action="https://formspree.io/seulbinim@gmail.com" class="search-form">
+            <fieldset>
+              <legend>검색 폼</legend>
+              <div class="flexbox">
                 <label for="search"><span class="icon-search"></span>자료검색</label>
-                <input type="search" id="search" name='search' required placeholder="검색어를 입력하세요 예) HTML">
-                <button type='submit' class="btn-search">검색</button>
+                <input type="search" id="search" name="search" required placeholder="검색어를 입력하세요 예)HTML">
+                <button type="submit" class="btn-search">검색</button>
               </div>
-              </fieldset>
-            </form>
+            </fieldset>
+          </form>
         </section>
         <div class="board">
           <section class="notice tab-act">
-            <h2 class="tab notice-heading" id="notice-heading">공지사항</h2>
+            <h2 class="tab notice-heading" id="notice-heading" tabindex="0">공지사항</h2>
             <ul class="notice-list">
               <li>
                 <a href="#">HTML의 모든 것을 알려주마 샘플 활용법</a>
@@ -234,7 +225,7 @@
             <a href="#" class="icon-plus notice-more" title="공지사항" aria-labelledby="notice-heading">더보기</a>
           </section>
           <section class="pds">
-            <h2 class="tab pds-heading" id="pds-heading">자료실</h2>
+            <h2 class="tab pds-heading" id="pds-heading" tabindex="0">자료실</h2>
             <ul class="pds-list">
               <li>
                 <a href="#">디자인 사이트 링크 모음</a>
@@ -260,11 +251,24 @@
             <a href="#" class="icon-plus pds-more" title="자료실" aria-labelledby="pds-heading">더보기</a>
           </section>
         </div>
+        <section class="news">
+          <h2 class="news-heading" id="newsTitle">이 달의 뉴스</h2>
+          <article class="news-item">
+            <h3 class="news-item-heading">W3C 사이트가 리뉴얼 되었습니다.</h3>
+            <time class="news-item-date" datetime="2021-03-02T13:57:28">2021.03.02</time>
+            <p class="news-item-brief">
+              디자인 및 다양한 view 환경을 고려하여 구성되어 있으며, 기존보다 최신 정보 및 개발자를 위한 기술 가이드도 찾기 쉽도록 구성되어 있습니다.  
+            </p>
+            <figure class="news-item-thumbnail">
+              <img src="./images/news.gif" alt="">
+              <figcaption>W3C 리뉴얼</figcaption>
+            </figure>
+          </article>
+          <a href="#" class="news-more icon-plus" aria-labelledby="newsTitle">더보기</a>
+        </section>
       </div>
       <div class="group group3">
-        <div class="board">
-          <h2 class="a11y-hidden"></h2>
-        </div>
+        그룹 3
       </div>
     </main>
     <article class="slogan">슬로건</article>
